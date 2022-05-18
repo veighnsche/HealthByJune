@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health By June</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="text/javascript" src="https://livejs.com/live.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+  <script>
+    function toggleHide(id) {
+      const { classList } = document.getElementById(id);
+      if (classList.contains('hide')) {
+        classList.remove('hide')
+      } else {
+        classList.add('hide')
+      }
+    }
+  </script>
+</head>
+<body>
+
+<header class="flex-between">
+  <div>
+    <h1>Health By June</h1>
+    <span class="occupation">Orthomoleculair Voedingsadviseur</span>
+  </div>
+  <button class="empty-button" onclick="toggleHide('navigator')">
+    <img src="img/burger.svg" class="menu-icon" alt="menu-icon"/>
+  </button>
+</header>
+
+<nav class="hide" id="navigator">
+  <ul>
+    <li><a href="#packages">Paketten</a></li>
+    <li><a href="#emb">EMB</a></li>
+    <li><a href="#about-me">Over mij</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="above-the-fold">
+  <div class="height50 image-profile"></div>
+  <div class="height50 px1 flex-col">
+    <h2 class="kugile">Van fysiek,<br/>Naar voeding</h2>
+    <h3>Al meer dan 10 jaar ervaring over vermoeidheid en chronische rugpijn</h3>
+    <a href="#contact">
+      <button class="call-to-action">
+        Neem contact op
+      </button>
+    </a>
+  </div>
+</div>
+
+<div class="full-height peach">
+  <div class="height50 image-food"></div>
+  <div class="height50 px1 flex-col">
+
+    <h2 class="shorter-line-height kugile">Verbeter jouw gezondheid</h2>
+    <span class="mt1">
+      Als Orthomoleculair Voedingsadviseur help ik je graag bij een betere gezondheid en het ondersteunen van jouw herstel.
+      Kennisoverdracht staat bij mij op 1.\n
+      Hoe los je vermoeidheid en pijnklachten op?
+      Wat is er voor een regelmatige menstruatiecyclus nodig?
+      Waarom heb je altijd een opgeblazen buik na het eten?
+    </span>
+    <a href="#about-me">
+      <button class="call-to-action">
+        Lees meer
+      </button>
+    </a>
+  </div>
+</div>
+
+<div class="px1" id="packages">
+  <div class="package">
+    <span class="price">€ 329,-</span>
+    <ul>
+      <li class="bold">4 weken</li>
+      <li>1 uur intake</li>
+      <li>EMB test</li>
+      <li>EMB consult</li>
+      <li>Uitgebreid advies</li>
+      <li>Receptsuggesties</li>
+    </ul>
+    <button class="call-to-action" onclick="toggleHide('package-a-desc')">
+      Meer informatie
+    </button>
+    <div class="hide" id="package-a-desc">
+      <p>
+        Pakket A duurt vier weken en bestaat uit een uitgebreid intakegesprek. Tijdens dit gesprek
+        neem ik gelijk een speldenprikje aan bloed bij jou af die naar het lab wordt gestuurd voor
+        analyse. Na vier weken plannen we een vervolggesprek in waarbij we de EMB resultaten
+        gaan bespreken. Je ontvangt een uitgebreid advies op het gebied van voeding- en leefstijl
+        per mail. Daarbij ontvang je ook receptsuggesties.
+      </p>
+      <a href="#contact">
+        <button class="call-to-action">
+          Neem contact op
+        </button>
+      </a>
+    </div>
+  </div>
+  <div class="package flex-col">
+    <span class="price">€ 389,-</span>
+    <ul>
+      <li class="bold">12 weken</li>
+      <li>1 uur intake</li>
+      <li>EMB test</li>
+      <li><span class="bold">2x</span> EMB consults</li>
+      <li><span class="bold">2x</span> 15m telefoon gesprekken</li>
+      <li>Uitgebreid advies</li>
+      <li>Receptsuggesties</li>
+      <li>Whatsapp op werkdagen</li>
+    </ul>
+    <span class="most-popular mt1">Meest verkocht</span>
+    <button class="call-to-action mt0" onclick="toggleHide('package-b-desc')">
+      Meer informatie
+    </button>
+    <div class="hide" id="package-b-desc">
+      <p>
+        Pakket B duurt drie maanden en bestaat uit een uitgebreid intakegesprek. Tijdens dit
+        gesprek neem ik gelijk een speldenbrikje aan bloed bij jou af die naar het lab wordt gestuurd
+        voor analyse. Na vier weken plannen we een vervolggesprek in waarbij we de EMB
+        resultaten gaan bespreken. Je ontvangt een uitgebreid advies op het gebied van voeding- en
+        leefstijl per mail. Daarbij ontvang je ook receptsuggesties. Je gaat een aantal weken aan de
+        slag met het advies en kijkt welke verbeteringen je ondervindt en waar je nog tegenaan
+        loopt. Je geeft zelf aan wanneer je het tweede vervolggesprek wilt inplannen. Tijdens dit
+        gesprek bespreken we waar je nog tegenaan loopt en wat we kunnen bijsturen in het advies.
+        Tussen de gesprekken door mag je vrijblijvend per mail of whatsapp aangeven wanneer je
+        ergens tegenaan loopt of wanneer je nog wat tips kan gebruiken.
+        Je kan gebruik maken van 3x 15 minuten gratis bellen om te sparren.
+      </p>
+      <a href="#contact">
+        <button class="call-to-action">
+          Neem contact op
+        </button>
+      </a>
+    </div>
+  </div>
+  <div class="package package-blue mb3">
+    <span class="price">€ 569,-</span>
+    <ul>
+      <li class="bold">24 weken</li>
+      <li class="bold">+ 4 weken extra</li>
+      <li>uitgebreide intake</li>
+      <li>EMB test</li>
+      <li><span class="bold">4x</span> EMB consults</li>
+      <li><span class="bold">3x</span> 15m telefoon gesprekken</li>
+      <li>Uitgebreid advies</li>
+      <li>Receptsuggesties</li>
+      <li>Whatsapp op werkdagen</li>
+    </ul>
+    <button class="call-to-action blue" onclick="toggleHide('package-c-desc')">
+      Meer informatie
+    </button>
+    <div class="hide" id="package-c-desc">
+      <p>
+        Pakket C duurt 6 maanden + 1 maand gratis en bestaat uit een uitgebreid intakegesprek.
+        Tijdens dit gesprek neem ik gelijk een speldenbrikje aan bloed bij jou af die naar het lab
+        wordt gestuurd voor analyse. Na vier weken plannen we een vervolggesprek in waarbij we
+        de EMB resultaten gaan bespreken. Je ontvangt een uitgebreid advies op het gebied van
+        voeding- en leefstijl per mail. Daarbij ontvang je ook receptsuggesties. Hierna volgen nog 3
+        consultgesprekken op jouw tempo. Hierin kunnen we bespreken hoe je ontwikkeling verloopt,
+        waar je nog tegenaan loopt en wat we kunnen bijsturen in het advies. Tussen de gesprekken
+        door mag je vrijblijvend per mail of whatsapp aangeven wanneer je ergens tegenaan loopt of
+        wanneer je nog wat tips kan gebruiken.
+        Je kan gebruik maken van 3x 15 minuten gratis bellen om te sparren.
+      </p>
+      <a href="#contact">
+        <button class="call-to-action blue">
+          Neem contact op
+        </button>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="full-height blue" id="emb">
+  <div class="height33 p1">
+    <div class="image-science"></div>
+  </div>
+  <div class="height66-2 px1 flex-col">
+    <h2 class="kugile">EMP test</h2>
+    <span class="mt1 white-text">
+      EMB staat voor <b>Energetisch Morfologische Bloedtest</b> en is een energetische bloedmeting.
+      Door middel van een speldenprikje nemen we een druppeltje bloed bij je af. Deze wordt naar
+      het lab gestuurd en geanalyseerd. Deze bloedtest is niet te vergelijken met een reguliere
+      bloedtest van de huisarts. De EMB biedt echter wel ontzettend veel inzicht in waar bij jou de
+      verstoringen en tekorten zitten en wat prioriteit heeft om aan te gaan werken.
+    </span>
+    <button class="call-to-action blue">
+      Lees meer
+    </button>
+  </div>
+</div>
+
+<div class="two-thirds-height image-june" id="about-me"></div>
+<div class="full-height peach flex-col">
+  <div class="p1">
+    <h1>June Bonnet</h1>
+    <span class="occupation">Orthomoleculair Voedingsadviseur</span>
+    <p>
+      Inmiddels ervaar ik meer dan 10 jaar klachten omtrent vermoeidheid en chronische
+      rugpijn. Een onregelmatige en soms pijnlijke menstruatiecyclus was ik als ‘normaal’ gaan
+      beschouwen. Het gaat erbij horen, je leert ermee leven. Je wordt zo goed als kan geholpen
+      door diverse zorgverleners maar niks helpt echt.
+    </p>
+    <p>
+      Wat niemand mij echter heeft verteld is dat je lichaam bouwstoffen nodig heeft om te kúnnen
+      herstellen. Bouwstoffen die we primair uit onze voeding halen. Vanaf dit moment van inzicht
+      ben ik in voeding gedoken en ging er een wereld voor mij open. Hoezo leren we niet dit op
+      school? Hoezo weet een huisarts dit niet?
+    </p>
+    <p>
+      Ik ben de opleiding tot Orthomoleculair Therapeut begonnen. En door learning by doing ging
+      mijn herstel ineens sky high. Ik heb me vaak onbegrepen gevoeld en zat jaren lang niet goed
+      in mijn vel maar weigerde om met mijn klachten te leren leven. Iedereen kan herstellen!
+      Zolang je maar weet waar je het zoeken moet. Ik sta voor jou klaar om je hier mee te helpen,
+      en begeleiden. Totdat jij zelfstandig verder kunt.
+    </p>
+  </div>
+</div>
+
+<div class="full-height orange">
+  <div class="height50 px1 flex-col">
+    <h1 class="white-text">Begeleid gezondheid</h1>
+    <p class="white-text">
+      Daarnaast is begeleiding ontzettend belangrijk. Wat is er voor jou nodig om een verbeterde
+      gezondheid te bereiken? Werken aan je gezondheid betekent ook verandering in je huidige
+      voeding- en leefstijl. Verandering is spannend, een uitdaging. Ook hier help ik je graag bij.
+      Gezondheid is mega persoonlijk, voor iedereen anders. Doordat ik hier zelf zo mee heb
+      geworsteld kan ik me goed verplaatsen in jouw verhaal. Mijn benadering is ‘teach what you
+      preach’. Ik heb veel uitgeprobeerd op het gebied van beweging, mindset en voeding en deel
+      graag mijn bevindingen.
+    </p>
+  </div>
+  <div class="height50 image-food2"></div>
+</div>
+
+<div class="full-height p1 flex-col" id="contact">
+  <h1 class="mb1">Neem contact op</h1>
+  <p>Stuur een mail naar <a href="mailto:info@healthbyjune.nl">info@healthbyjune.nl</a></p>
+  <p>Of neem contact op met de onderstaande contact formulier</p>
+  <form>
+    <label for="e-mail">
+      <span>
+        E-mailadres
+      </span>
+      <input id="e-mail" name="e-mail" type="email">
+    </label>
+    <label for="phone">
+      <span>
+        Telefoonnummer
+      </span>
+      <input id="phone" name="phone">
+    </label>
+    <label for="message">
+      <span>
+        Bericht
+      </span>
+      <textarea id="message" name="message" rows="10"></textarea>
+    </label>
+    <button class="call-to-action" type="submit">
+      Verstuur
+    </button>
+  </form>
+</div>
+
+</body>
+</html>
